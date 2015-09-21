@@ -1,0 +1,26 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+$(".style_image").on("click", function(){
+  $.ajax({
+    type: "POST",
+    url: "/glamorous",
+    data: { filter : { url : $(".item").attr("href") } }
+   })  
+    .done(function(msg){
+      alert("Data Saved:" + msg);
+    });
+});
+
+</script>
+
+
+<div class="custom_widget">
+  <% if @dresses.products.any? %>
+    <% @dresses.products.each do |product| %>
+      <% if product["description"].include?("silk") || product["description"].include?("satin") %>
+      <div class="product">
+        <a class = "item" href=<%= product['pageUrl'] %>><%= image_tag product["image"]["sizes"]["XLarge"]["url"], :class => "style_image" %></a>
+      </div>
+      <% end %>
+    <% end %>
+  <% end %>
+</div>
