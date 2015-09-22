@@ -1,6 +1,7 @@
 class FiltersController < ApplicationController
   def create
-    @formal_images = Filter.new(params[:url])
-    @formal_images.save
+    @images = Filter.new(params[:url])
+    @images.save
   end
+
 end

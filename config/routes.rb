@@ -6,6 +6,12 @@ StyleSearch5::Application.routes.draw do
   resources :dresses
   resources :style
   resources :glamorous
+  resources :bohemian
+  resources :classic
+  resources :blazers
+  resources :party
+  resources :work
+  resources :casual
 
   
   # The priority is based upon order of creation:

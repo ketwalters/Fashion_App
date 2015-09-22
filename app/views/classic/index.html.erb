@@ -1,0 +1,11 @@
+<div class="custom_widget">
+  <% if @classic_dresses.products.any? %>
+    <% @classic_dresses.products.each do |product| %>
+      <% if product["description"].include?("classic") || product["description"].include?("knit") %>
+      <div class="product">
+        <a class = "item" href=<%= product['pageUrl'] %>><%= image_tag product["image"]["sizes"]["XLarge"]["url"], :class => "style_image" %></a>
+      </div>
+      <% end %>
+    <% end %>
+  <% end %>
+</div>

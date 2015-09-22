@@ -3,11 +3,12 @@ $(".style_image").on("click", function(){
   $.ajax({
     type: "POST",
     url: "/glamorous",
-    data: { filter : { url : $(".item").attr("href") } }
-   })  
-    .done(function(msg){
-      alert("Data Saved:" + msg);
-    });
+    data: { filter : { url : $(".item").attr("href") } },
+    success: function(data) {
+      alert("Ajax save executed")
+    }
+});  
+    
 });
 
 </script>
