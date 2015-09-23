@@ -1,6 +1,6 @@
 StyleSearch5::Application.routes.draw do
 
-  get "users/index"
+  get "persons/index"
   resources :categories
   resources :men_categories
   resources :dresses
