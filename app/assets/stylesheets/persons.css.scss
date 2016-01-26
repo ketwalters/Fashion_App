@@ -22,18 +22,18 @@ body:after {
 }
 
 h1, span {
-  font-family: 'Poiret One', cursive;
+  font-family: 'Dancing Script', cursive;
   color: white;
 }
 
 h1  {
-  font-size: 70px;
+  font-size: 80px;
   position: relative;
   left: 7%;
 }
 
 span {
-  font-size: 30px;
+  font-size: 40px;
   position: relative;
   left: 13%;
   padding: 20px;
@@ -41,4 +41,9 @@ span {
 
 a {
     text-decoration: none;
+}
+
+.user {
+  position: absolute;
+  bottom: 50%;
 }
