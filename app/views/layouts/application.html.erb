@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Style Search</title>
-  <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
-  <link href="css/style.css" rel="stylesheet">
+  <head>
+    <title>Style Search</title>
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <link href="users/style.css" rel="stylesheet">
+    <link href="persons/style.css" rel="stylesheet">
+    <link href="categories/style.css" rel="stylesheet">
 
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= stylesheet_link_tag params[:controller] %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
+    <%= stylesheet_link_tag "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= stylesheet_link_tag params[:controller] %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div class="container">
+      <%= yield %>
+    </div>
+  </body>
 </html>

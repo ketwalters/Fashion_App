@@ -1,6 +1,9 @@
 StyleSearch5::Application.routes.draw do
 
+  devise_for :users
+
   get "persons/index"
+
   resources :categories
   resources :men_categories
   resources :dresses
@@ -12,6 +15,12 @@ StyleSearch5::Application.routes.draw do
   resources :party
   resources :work
   resources :casual
+
+
+  #resources :category do
+   # resources :product
+  #end
+
 
   
   # The priority is based upon order of creation:

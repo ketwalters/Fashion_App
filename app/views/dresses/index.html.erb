@@ -1,11 +1,14 @@
-<%= link_to glamorous_path do %>
-  <span>Glamorous</span>
-<% end %>
+<div id="types">
+  <p>Choose a style</p>
+  <%= link_to glamorous_path do %>
+    <div id="glam">Glamorous</div>
+  <% end %>
 
-<%= link_to bohemian_index_path do %>
-  <span>Bohemian</span>
-<% end %>
+  <%= link_to bohemian_index_path do %>
+    <div>Bohemian</div>
+  <% end %>
 
-<%= link_to classic_index_path do %>
-  <span>Classic</span>
-<% end %>
+  <%= link_to classic_index_path do %>
+    <div>Classic</div>
+  <% end %>
+</div>

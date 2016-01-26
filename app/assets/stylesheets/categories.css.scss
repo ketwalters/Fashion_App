@@ -1,14 +1,18 @@
 // Place all the styles related to the categories controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
 body {
   background-color: black;
 }
 
-span {
+div {
   font-family: 'Poiret One', cursive;
   color: white;
-  font-size: 30px;
+  font-size: 40px;
+  position: absolute;
+  left: 45%;
+  top: 40%;
 }
 
 a {

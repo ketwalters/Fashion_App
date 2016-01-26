@@ -18,6 +18,7 @@ body:after {
     bottom: 0;
     left: 50%;
     border-left: 2px solid black;
+    max-width: 90%
 }
 
 h1, span {
@@ -37,8 +38,6 @@ span {
   left: 13%;
   padding: 20px;
 }
-
-
 
 a {
     text-decoration: none;
