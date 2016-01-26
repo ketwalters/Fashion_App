@@ -4,6 +4,9 @@ StyleSearch5::Application.routes.draw do
 
   get "persons/index"
 
+  #resources :persons
+  root :to => "persons#index" 
+
   resources :categories
   resources :men_categories
   resources :dresses
