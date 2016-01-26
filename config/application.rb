@@ -59,7 +59,7 @@ module StyleSearch5
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
     
-    config.assets.precompile += ['persons.css']
+    config.assets.precompile += %w(persons.css)
     config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
     config.assets.precompile << "*.css"
     config.assets.initialize_on_precompile = false
